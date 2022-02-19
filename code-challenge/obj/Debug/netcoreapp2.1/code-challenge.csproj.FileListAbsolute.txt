@@ -1,0 +1,16 @@
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/appsettings.Development.json
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/appsettings.json
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/resources/EmployeeSeedData.json
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/code-challenge.deps.json
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/code-challenge.runtimeconfig.json
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/code-challenge.runtimeconfig.dev.json
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/code-challenge.dll
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/code-challenge.pdb
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.csproj.AssemblyReference.cache
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.AssemblyInfoInputs.cache
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.AssemblyInfo.cs
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.csproj.CoreCompileInputs.cache
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.dll
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.pdb
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.genruntimeconfig.cache
