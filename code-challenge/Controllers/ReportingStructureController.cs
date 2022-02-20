@@ -9,7 +9,7 @@ using challenge.Models;
 
 namespace challenge.Controllers
 {
-    [Route("api/reporting-structure")]
+    [Route("api/reportingStructure")]
     public class ReportingStructureController : Controller
     {
         private readonly ILogger _logger;
@@ -21,15 +21,17 @@ namespace challenge.Controllers
             _employeeService = employeeService;
         }
         
-        [HttpGet("{id}", Name = "getEmployeeById")]
-        public IActionResult GetEmployeeById(String id)
+        [HttpGet("{id}", Name = "getReportingStructureById")]
+        public IActionResult GetReportingStructureById(String id)
         {
             _logger.LogDebug($"Received employee get request for '{id}'");
 
             var reportingStructure = _employeeService.GetReportingStructureWithId(id);
 
             if (reportingStructure == null)
+            {
                 return NotFound();
+            }
 
             return Ok(reportingStructure);
         }

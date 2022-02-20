@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using challenge.Models;
 using Microsoft.Extensions.Logging;
 using challenge.Repositories;
+using Newtonsoft.Json.Serialization;
 
 namespace challenge.Services
 {
@@ -64,20 +66,31 @@ namespace challenge.Services
         // Added to get the reporting structure given an employee
         public ReportingStructure GetReportingStructureWithId(string id)
         {
-            // Get the employee and create reporting structure
-            Employee employee = GetById(id);
-            ReportingStructure reportingStructure = new ReportingStructure();
-
-            // Recursively generate reporting structure
-            var reports = employee.DirectReports;
-            foreach (var t in reports)
+            if (!String.IsNullOrEmpty(id))
             {
-                ReportingStructure temp = GetReportingStructureWithId(t.EmployeeId);
-                reportingStructure.NumberOfReports += 1 + temp.NumberOfReports;
+                // Get the employee
+                Employee employee = GetById(id);
+
+                // Create and return reporting structure
+                return new ReportingStructure
+                {
+                    ReportEmployee = employee,
+                    NumberOfReports = CountReports(employee)
+                };
             }
-            
-            // Return the value
-            return reportingStructure;
+            return null;
+        }
+    
+        // Count the number of reports for the reporting structure
+        private int CountReports(Employee employee)
+        {
+            var count = 0;
+            if (employee.DirectReports == null) return count;
+            foreach(var t in employee.DirectReports)
+            {
+                count += CountReports(t) + 1;
+            }
+            return count;
         }
     }
 }

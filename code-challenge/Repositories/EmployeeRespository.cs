@@ -29,7 +29,8 @@ namespace challenge.Repositories
 
         public Employee GetById(string id)
         {
-            return _employeeContext.Employees.SingleOrDefault(e => e.EmployeeId == id);
+            // Add as enumerable so a list (direct reports) can be returned
+            return _employeeContext.Employees.AsEnumerable().SingleOrDefault(e => e.EmployeeId == id);
         }
 
         public Task SaveAsync()
