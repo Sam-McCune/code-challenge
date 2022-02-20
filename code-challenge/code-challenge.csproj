@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <Compile Remove="Repositories\IReportingStructureService.cs" />
+    <Compile Remove="resources\CompensationSeedData.json.cs" />
   </ItemGroup>
 
 </Project>

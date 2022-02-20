@@ -14,3 +14,4 @@
 /Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.dll
 /Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.pdb
 /Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.genruntimeconfig.cache
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/resources/CompensationSeedData.json

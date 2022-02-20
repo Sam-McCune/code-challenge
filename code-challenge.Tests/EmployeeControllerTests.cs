@@ -39,6 +39,25 @@ namespace code_challenge.Tests.Integration
             _httpClient.Dispose();
             _testServer.Dispose();
         }
+        
+        // Task 1 Get Reporting Structure Test
+        [TestMethod]
+        public void GetReportingStructureById_Returns_ReportingStructure()
+        {
+            // John Lennon Id
+            var employeeId = "16a596ae-edd3-4847-99fe-c4518e82c86f";
+            var expectedReportCount = 4;
+
+            // Execute
+            var getRequestTask = _httpClient.GetAsync($"api/reportingStructure/{employeeId}");
+            var response = getRequestTask.Result;
+
+            // Assert
+            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+            var reportingStructure = response.DeserializeContent<ReportingStructure>();
+            Assert.AreEqual(employeeId, reportingStructure.ReportEmployee.EmployeeId);
+            Assert.AreEqual(expectedReportCount, reportingStructure.NumberOfReports);
+        }
 
         [TestMethod]
         public void CreateEmployee_Returns_Created()
@@ -137,24 +156,6 @@ namespace code_challenge.Tests.Integration
 
             // Assert
             Assert.AreEqual(HttpStatusCode.NotFound, response.StatusCode);
-        }
-        
-        [TestMethod]
-        public void GetReportingStructureById_Returns_ReportingStructure()
-        {
-            // John Lennon Id
-            var employeeId = "16a596ae-edd3-4847-99fe-c4518e82c86f";
-            var expectedReportCount = 4;
-
-            // Execute
-            var getRequestTask = _httpClient.GetAsync($"api/reportingStructure/{employeeId}");
-            var response = getRequestTask.Result;
-
-            // Assert
-            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
-            var reportingStructure = response.DeserializeContent<ReportingStructure>();
-            Assert.AreEqual(employeeId, reportingStructure.ReportEmployee.EmployeeId);
-            Assert.AreEqual(expectedReportCount, reportingStructure.NumberOfReports);
         }
     }
 }

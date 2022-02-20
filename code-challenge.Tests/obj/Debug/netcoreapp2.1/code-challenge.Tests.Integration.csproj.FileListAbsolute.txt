@@ -23,3 +23,4 @@
 /Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge.Tests/obj/Debug/netcoreapp2.1/code-challenge.Tests.Integration.dll
 /Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge.Tests/obj/Debug/netcoreapp2.1/code-challenge.Tests.Integration.pdb
 /Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge.Tests/obj/Debug/netcoreapp2.1/code-challenge.Tests.Integration.genruntimeconfig.cache
+/Users/sammccune/Documents/MindexProject/sr-code-challenge-dotnet/code-challenge.Tests/bin/Debug/netcoreapp2.1/resources/CompensationSeedData.json
